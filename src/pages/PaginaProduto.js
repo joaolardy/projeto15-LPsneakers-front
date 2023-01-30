@@ -1,6 +1,7 @@
 import { tenis } from '../dados/mock';
 import styled from 'styled-components';
-import DescricaoProduto from '../components/DescricaoProduto';
+import DescricaoProduto from '../PaginaProduto/DescricaoProduto';
+import {BotaoComprar} from '../style/GlobalStyle';
 
 export default function PaginaProduto() {
 
@@ -12,6 +13,7 @@ export default function PaginaProduto() {
             </BarraSuperior>
             <FotoProduto src={tenis.photo} alt={tenis.name} />
             <DescricaoProduto />
+            <BotaoComprar>Comprar</BotaoComprar>
         </FundoProduto>
     );
 }

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -44,6 +44,32 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+h3{
+    text-align: left;
+}
 `
+const TituloSecundario = styled.h3`
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 17px;
+        padding-left: 20px;
+`
+const BotaoComprar = styled.div`
+    width: 80%;
+    height: 70px;
+    background-color: #5956E9;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Raleway';
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    bottom: 40px;
+    `
 
-export default GlobalStyle
+export default GlobalStyle;
+export {TituloSecundario, BotaoComprar};
